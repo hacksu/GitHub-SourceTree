@@ -90,7 +90,7 @@ git clone [url]
 Open a text editor like VS Code or Atom.
 In your local clone of your repo, make a new file and name it with the extension .html, like index.html or website.html. In this file, we'll be writing HTML, our first language! Go Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
 </p>
- ```
+<code>
  <html>
   <head>
   
@@ -113,7 +113,7 @@ In your local clone of your repo, make a new file and name it with the extension
   
   </body>
  </html>
-```
+</code>
 <p>
 Note: HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like <body>, and closing tags, like </body>. The head tags surround information about the website, while the body tags show the actual content of the website. If any of these tags confuse you, turn to google to learn about them!
 </p>
@@ -129,9 +129,9 @@ git add *.
 The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
 
 Commit your files with: </p>
-```
-git commit -m "initialized index"
-```
+
+```git commit -m "initialized index"```
+
 <p>
 Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
 
@@ -201,15 +201,15 @@ Let’s make our index.html connect with the styling.css file that is now in our
  
  </head>
 ```
-<p>Save your HTML and see if the styles were applied! Make sure that in href="style.css", "style.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
+<p>Save your HTML and see if the styles were applied! Make sure that in ```href="style.css"```, ```"style.css" ``` is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
 
-In Sourcetree, go to “File Status” and we should grey box showing the changes made to the files. We should see whatever changes we made to index.html shown in there. If we want to commit those changes, select the file name, hit “stage selected.” It should move into the “staged files” box. This is taking place of the “git add *” command we did earlier.
+In Sourcetree, go to “File Status” and we should grey box showing the changes made to the files. We should see whatever changes we made to index.html shown in there. If we want to commit those changes, select the file name, hit “stage selected.” It should move into the “staged files” box. This is taking place of the ```git add *``` command we did earlier.
 
-We are ready to write our commit message. Do this in the bottom-most box (underneath your username). This is taking place of the git commit -m "message" command we did earlier.
+We are ready to write our commit message. Do this in the bottom-most box (underneath your username). This is taking place of the ```git commit -m "message"``` command we did earlier.
 
-The “push” feature at the top should now have a blue oval with the number of files to commit. Select “master” branch under “Branches.” Notice that to the right, it shows the changes by denoting green for additions and red for anything removed/updated. Hit “push.” This is taking place of the git push command we did earlier.
+The “push” feature at the top should now have a blue oval with the number of files to commit. Select “master” branch under “Branches.” Notice that to the right, it shows the changes by denoting green for additions and red for anything removed/updated. Hit “push.” This is taking place of the ```git push``` command we did earlier.
 
 
-Verify that changes were pushed in GitHub. Then try opening index.html locally to see the new styling! 
+Verify that changes were pushed in GitHub. Then try opening ```index.html``` locally to see the new styling! </p>
 
-Credit to Ben Holland for writing the GitHub portion of this lesson! Thanks, Ben! :D </p>
+<em>Credit to Ben Holland for writing the GitHub portion of this lesson! Thanks, Ben! :D </em>
