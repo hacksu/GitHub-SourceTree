@@ -90,7 +90,8 @@ git clone [url]
 Open a text editor like VS Code or Atom.
 In your local clone of your repo, make a new file and name it with the extension .html, like index.html or website.html. In this file, we'll be writing HTML, our first language! Go Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
 </p>
-<code>
+
+ ```
  <html>
   <head>
   
@@ -113,7 +114,8 @@ In your local clone of your repo, make a new file and name it with the extension
   
   </body>
  </html>
-</code>
+```
+
 <p>
 Note: HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like <body>, and closing tags, like </body>. The head tags surround information about the website, while the body tags show the actual content of the website. If any of these tags confuse you, turn to google to learn about them!
 </p>
