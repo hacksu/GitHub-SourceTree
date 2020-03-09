@@ -12,13 +12,12 @@ Github uses Git, a version control system (like SVN, if you've used that) that l
 </ul>
 
  <h2> Github Glossary</h2>
-<p>--- Some Github terms you might be confused by:
-Git -- Version control system. You install this on your computer to let you easily move things to and from Github.
-Github -- The website hosting everything submitted by Git.
-Repository (or repo) -- Any github project. Basically just a set of files hosted on github.
-Clone-- You can take a Github repo and clone it to your local computer so you can work on it.
-Commit -- Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
-(Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)</p>
+Some Github terms you might be confused by:
+<strong>Git</strong> -- Version control system. You install this on your computer to let you easily move things to and from Github <strong>Github</strong> -- The website hosting everything submitted by Git.
+<strong>Repository (or repo)</strong> -- Any github project. Basically just a set of files hosted on github.
+<strong>Clone</strong>-- You can take a Github repo and clone it to your local computer so you can work on it.
+<strong>Commit</strong> -- Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
+(Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)
 
 <h2>Github Setup</h2>
 Check if GitHub is installed.
@@ -42,57 +41,74 @@ Congrats, you just made your first Github repo!</p>
 
 <h2>Mac/linux Git Install instructions:</h2>
 If you're using a Mac or Linux OS, open up the terminal. On a mac, you should be able to find it by searching for "terminal", or looking in your Applications folder. To see if you have git, type </p>
+
 >git --version
+
 <p>and press enter. If you don't have it yet, follow these instructions, and then restart your terminal to see if it worked.</p>
  
 <h2>Windows Git Install Instructions:</h2>
 If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt should also work, but I like powershell more.) To see if you have git, type: </p> 
+
 >git --version 
+
 <p>and press enter. If you don't have it yet, follow these instructions, and then restart your powershell to see if it worked.
 For either setup, remember to do these commands too:</p>
+
 >git config --global user.name "Your name"  OR 
+
 >git config --global user.email "your@email.com"
 
-Cloning the Repo
+<h2>Cloning the Repo</h2>
 Now that you have Git installed, we can finally clone our repo! But first, we need to learn how to use our terminal.
+
 Your terminal always points to somewhere on your computer, and we can type different commands to navigate through our computer and interact with files. (Tip: Pressing 'tab' in the terminal will try to autocomplete whatever you're typing.)
+
 Here are the terminal commands we'll be using:
-cd [somewhere] -- stands for "change directory". Replace [somewhere] with an existing folder.
-cd .. will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)
-cd ~ will take you to your "home directory" from wherever you are.
-ls -- is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory
-mkdir [folder name] -- stands for "make directory". Will make a folder named [folder name] in the current directory
-Type cd Desktop you'll navigate straight to your desktop. From there, navigate to wherever you want to keep your project on your folder. You can also type mkdir hacksuProjects or something to make a folder named "hacksuProjects" on your desktop (You would then type cd hacksuProjects/ to go inside of that folder.)
+<ul>
+<li>cd [somewhere] -- stands for "change directory". Replace [somewhere] with an existing folder.</li>
+<ul><li>cd .. will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
+ <<li>cd ~ will take you to your "home directory" from wherever you are.</li>
+<li>ls -- is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
+<li>mkdir [folder name] -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
+</ul>
+Type cd Desktop you'll navigate straight to your desktop. From there, navigate to wherever you want to keep your project on your folder. You can also type: 
+>mkdir hacksuProjects 
+or something to make a folder named "hacksuProjects" on your desktop (You would then type cd hacksuProjects/ to go inside of that folder.)
+
 Once you're in the folder you want to store your projects, go back to your github repo, and click the green
 Go to your repo page on Github and find the green button that says 'Clone or download', and copy the URL it shows. Go back to the terminal and the following command, replacing [ur] with the URL you copied:
-git clone [url]
+
+>git clone [url]
+
 Unless you have an error, congrats! You just cloned your repo to your computer! You can now enter cd [repo name] to go into your repo.
+
 ------------------
-Making Our Website
+
+<h2>Making Our Website</h2>
 Open a text editor like VS Code or Atom.
 In your local clone of your repo, make a new file and name it with the extension .html, like index.html or website.html. In this file, we'll be writing HTML, our first language! Go Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
-<html>
- <head>
- 
- <title>My first website, yo !</title>
- 
- </head>
- <body>
-
-  <h1>My first website (or whatever)</h2>
-  
-  <p>Here's some text in a 'paragraph' tag</p>
-  <p>Here's some more text, with a <a href="https://youtu.be/zbc2LUAP6G4">link!</a>
-  <img src="https://i.kym-cdn.com/entries/icons/mobile/000/025/999/Screen_Shot_2018-04-24_at_1.33.44_PM.jpg" height="200px" width="400px">
-  
-  <div class="myDiv"> This is a special divider</div>
-  
-  <button onclick="alert('hello world')">Here's a button </button> 
-  
-  <!-- This is an HTML comment. It won't affect the actual content of the page -->
-  
- </body>
-</html>
+><html>
+> <head>
+> 
+> <title>My first website, yo !</title>
+> 
+> </head>
+> <body>
+>
+>  <h1>My first website (or whatever)</h2>
+>  
+>  <p>Here's some text in a 'paragraph' tag</p>
+>  <p>Here's some more text, with a <a href="https://youtu.be/zbc2LUAP6G4">link!</a>
+>  <img src="https://i.kym-cdn.com/entries/icons/mobile/000/025/999/Screen_Shot_2018-04-24_at_1.33.44_PM.jpg" height="200px" width="400px">
+> 
+> <div class="myDiv"> This is a special divider</div>
+>  
+>  <button onclick="alert('hello world')">Here's a button </button> 
+>  
+>  <!-- This is an HTML comment. It won't affect the actual content of the page -->
+>  
+> </body>
+></html>
  
  
 Note: HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like <body>, and closing tags, like </body>. The head tags surround information about the website, while the body tags show the actual content of the website. If any of these tags confuse you, turn to google to learn about them!
