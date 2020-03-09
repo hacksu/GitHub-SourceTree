@@ -1,0 +1,27 @@
+body {
+  background: cyan;
+}
+
+p {
+  color: red;
+  font-family: Courier;
+}
+
+.myDiv {
+  width: 400px;
+  height: 300px;
+  border: solid 2px black;
+  border-radius: 25%;
+  background: yellow;
+  
+  animation: myAnimation 10s infinite;
+}
+
+@keyframes myAnimation {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to { 
+    filter: hue-rotate(360deg);
+  }
+}
