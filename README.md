@@ -87,53 +87,71 @@ Unless you have an error, congrats! You just cloned your repo to your computer! 
 <h2>Making Our Website</h2>
 Open a text editor like VS Code or Atom.
 In your local clone of your repo, make a new file and name it with the extension .html, like index.html or website.html. In this file, we'll be writing HTML, our first language! Go Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
-><html>
-> <head>
-> 
-> <title>My first website, yo !</title>
-> 
-> </head>
-> <body>
->
->  <h1>My first website (or whatever)</h2>
->  
->  <p>Here's some text in a 'paragraph' tag</p>
->  <p>Here's some more text, with a <a href="https://youtu.be/zbc2LUAP6G4">link!</a>
->  <img src="https://i.kym-cdn.com/entries/icons/mobile/000/025/999/Screen_Shot_2018-04-24_at_1.33.44_PM.jpg" height="200px" width="400px">
-> 
-> <div class="myDiv"> This is a special divider</div>
->  
->  <button onclick="alert('hello world')">Here's a button </button> 
->  
->  <!-- This is an HTML comment. It won't affect the actual content of the page -->
->  
-> </body>
-></html>
+<p>
+<html>
+ <head>
  
+ <title>My first website, yo !</title>
+ 
+ </head>
+ <body>
+
+  <h1>My first website (or whatever)</h2>
+  
+  <p>Here's some text in a 'paragraph' tag</p>
+  <p>Here's some more text, with a <a href="https://youtu.be/zbc2LUAP6G4">link!</a>
+  <img src="https://i.kym-cdn.com/entries/icons/mobile/000/025/999/Screen_Shot_2018-04-24_at_1.33.44_PM.jpg" height="200px" width="400px">
+ 
+ <div class="myDiv"> This is a special divider</div>
+  
+  <button onclick="alert('hello world')">Here's a button </button> 
+  
+  <!-- This is an HTML comment. It won't affect the actual content of the page -->
+  
+ </body>
+</html>
+
+</p> 
  
 Note: HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like <body>, and closing tags, like </body>. The head tags surround information about the website, while the body tags show the actual content of the website. If any of these tags confuse you, turn to google to learn about them!
-Pushing to our Github Repo with Git
+
+<h2>Pushing to our Github Repo with Git</h2>
+
 So, now we have a website! Let's save it to our Github repo, so the whole world can see it!
 Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
-Add your files by typing git add *. The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
-Commit your files with git commit -m "initialized index". Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
-Enter git push to "push" all your local commits to your github repo.
-If you didn't get any errors, go to Github and see if your code is all there! Congratulations!
-Now let’s compare to Sourcetree... 
-Downloading Sourcetree:
-Download at https://www.sourcetreeapp.com/
-Select Bit Bucket option (not Bit Bucket server)
-There should be a pop-up prepopulated with GitHub credentials. If that’s not there, enter your GitHub credentials.
-If asked if you need a SSH key, say “no.”
+Add your files by typing
 
+>git add *. 
+
+The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
+
+Commit your files with 
+>git commit -m "initialized index"
+Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
+
+Enter
+>git push 
+to "push" all your local commits to your github repo.
+
+If you didn't get any errors, go to Github and see if your code is all there! Congratulations!
+
+<h1>Now let’s compare to Sourcetree... </h1>
+<h2>Downloading Sourcetree:</h2>
+<ul>
+<li>Download at https://www.sourcetreeapp.com/</li>
+<li>Select Bit Bucket option (not Bit Bucket server)</li>
+<li>There should be a pop-up prepopulated with GitHub credentials. If that’s not there, enter your GitHub credentials.</li>
+<li>If asked if you need a SSH key, say “no.”</li>
+</ul>
 
 Let’s pull our current repository into SourceTree.
 
-In Sourcetree
+<h2>In Sourcetree</h2>
  
 Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how Sourcetree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier.
 
 <em>Note to presenter: Use the GitHub interface to create the css file. This will give them practice in pulling in a file.</em>
+<p>
 create style.css
 
 body {
@@ -163,20 +181,21 @@ p {
     filter: hue-rotate(360deg);
   }
 }
-
+</p>
 
 It’s a good habit that when you are not working with a brand-new repository to pull for changes. If someone else had pushed to the same repository, we’d need to pull their changes locally. Let’s hit “pull” on Sourcetree. When we open up the editor, we should see the new changes from us pulling.
 
 Let’s make our index.html connect with the styling.css file that is now in our editor.
 
  Now, to link it to our HTML file, we need to add this in our head tags in our html file:
+<p>
 <head>
  
  <title>My first website, yo !</title>
  <link rel="stylesheet" href="style.css">
  
  </head>
-
+</p>
 Save your HTML and see if the styles were applied! Make sure that in href="style.css", "style.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
 
 In Sourcetree, go to “File Status” and we should grey box showing the changes made to the files. We should see whatever changes we made to index.html shown in there. If we want to commit those changes, select the file name, hit “stage selected.” It should move into the “staged files” box. This is taking place of the “git add *” command we did earlier.
