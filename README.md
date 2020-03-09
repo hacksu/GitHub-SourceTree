@@ -1,47 +1,57 @@
-# GitHub-SourceTree
-GitHub vs. SourceTree
+<h2> Tutorial on using GitHub and Sourcetree(source control GUI)</h2>
+<h1>Github - What Is It, and Why Use It?</h1>
 
-Github - What Is It, and Why Use It?
 If you already know what github is, skip this section.
+
 Github is for project management! Here's some reasons to use Github:
-It allows you to share projects, either with a team or with the whole world, and set permissions on who can and can't contribute.
-If you don't have permission to edit a project, you can 'fork' it -- make a copy of it -- and edit it all you want
-Github uses Git, a version control system (like SVN, if you've used that) that lets you work on your projects from any computer, and lets you go between different saved versions anytime you want.
-When you have multiple people working on a project, Git also helps handle "merge conflicts" -- when two different users submit two different, conflicting submissions
-A bunch of other neat organization tools, like issues, wikis, and readme files like this one!!
--- Github Glossary
---- Some Github terms you might be confused by:
+<ul><li>It allows you to share projects, either with a team or with the whole world, and set permissions on who can and can't contribute.</li>
+<li>If you don't have permission to edit a project, you can 'fork' it -- make a copy of it -- and edit it all you want
+Github uses Git, a version control system (like SVN, if you've used that) that lets you work on your projects from any computer, and lets you go between different saved versions anytime you want.</li>
+<li>When you have multiple people working on a project, Git also helps handle "merge conflicts" -- when two different users submit two different, conflicting submissions.</li>
+<li>A bunch of other neat organization tools, like issues, wikis, and readme files like this one!!</li>
+</ul>
+
+ <h2> Github Glossary</h2>
+<p>--- Some Github terms you might be confused by:
 Git -- Version control system. You install this on your computer to let you easily move things to and from Github.
 Github -- The website hosting everything submitted by Git.
 Repository (or repo) -- Any github project. Basically just a set of files hosted on github.
-Clone -- You can take a Github repo and clone it to your local computer so you can work on it.
+Clone-- You can take a Github repo and clone it to your local computer so you can work on it.
 Commit -- Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
-(Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)
-Github Setup
+(Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)</p>
+
+<h2>Github Setup</h2>
 Check if GitHub is installed.
-git --version
-If not, follow the install wizard here:
+
+>git --version
+
+<p>If not, follow the install wizard here:
 http://bit.ly/dl_github  (https://git-scm.com/downloads)
-The first thing we need is to set up a github account. If you already have a github account, skip this portion.
+The first thing we need is to set up a github account. *If you already have a github account, skip this portion.*
 Go to github.com and sign up with a unique username, and an email you can access.
 Select the free account option and press continue. 
-You'll now need to confirm your email.
-Repo Setup
-Once you have a confirmed Github account, click on the + icon in the upper lefthand corner of Github, and select "New Repository".
+You'll now need to confirm your email.</p>
+
+<h2>Repo Setup</h2>
+<p>Once you have a confirmed Github account, click on the + icon in the upper lefthand corner of Github, and select "New Repository".
 Name your repository whatever you want -- "My first site" or something. Add a description, decide whether you want it to be public or not, and check the box that says "initialize this repository with a README".
-Congrats, you just made your first Github repo!
-Git setup/Cloning our repo!
-Now, we need to set up Git on your computer. To do this, we're going to learn some basic terminal commands!
-Mac/linux Git Install instructions:
-If you're using a Mac or Linux OS, open up the terminal. On a mac, you should be able to find it by searching for "terminal", or looking in your Applications folder. To see if you have git, type git --version and press enter. If you don't have it yet, follow these instructions, and then restart your terminal to see if it worked.
+Congrats, you just made your first Github repo!</p>
+
+<h2>Git setup/Cloning our repo!</h2>
+<p>Now, we need to set up Git on your computer. To do this, we're going to learn some basic terminal commands!
+
+<h2>Mac/linux Git Install instructions:</h2>
+If you're using a Mac or Linux OS, open up the terminal. On a mac, you should be able to find it by searching for "terminal", or looking in your Applications folder. To see if you have git, type </p>
+>git --version
+<p>and press enter. If you don't have it yet, follow these instructions, and then restart your terminal to see if it worked.</p>
  
-Windows
-git clone [copied URL]
-Windows Git Install Instructions:
-If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt should also work, but I like powershell more.) To see if you have git, type git --version and press enter. If you don't have it yet, follow these instructions, and then restart your powershell to see if it worked.
-For either setup, remember to do these commands too:
-git config --global user.name "Your name"  OR 
-git config --global user.email "your@email.com"
+<h2>Windows Git Install Instructions:</h2>
+If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt should also work, but I like powershell more.) To see if you have git, type: </p> 
+>git --version 
+<p>and press enter. If you don't have it yet, follow these instructions, and then restart your powershell to see if it worked.
+For either setup, remember to do these commands too:</p>
+>git config --global user.name "Your name"  OR 
+>git config --global user.email "your@email.com"
 
 Cloning the Repo
 Now that you have Git installed, we can finally clone our repo! But first, we need to learn how to use our terminal.
@@ -89,7 +99,7 @@ Note: HTML is used to format text, and tell the browser what each text is for. I
 Pushing to our Github Repo with Git
 So, now we have a website! Let's save it to our Github repo, so the whole world can see it!
 Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
-Add your files by typing git add *. The astrisk * is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
+Add your files by typing git add *. The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
 Commit your files with git commit -m "initialized index". Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
 Enter git push to "push" all your local commits to your github repo.
 If you didn't get any errors, go to Github and see if your code is all there! Congratulations!
