@@ -65,9 +65,9 @@ Your terminal always points to somewhere on your computer, and we can type diffe
 
 Here are the terminal commands we'll be using:
 <ul>
-<li>```cd [somewhere]``` -- stands for "change directory". Replace [somewhere] with an existing folder.</li>
-<li>```cd ../``` will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
-<li>```ls ``` is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
+<li>cd [somewhere]-- stands for "change directory". Replace [somewhere] with an existing folder.</li>
+<li>cd ../ will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
+<li>ls  is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
 <li>mkdir [folder name] -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
 </ul>
 
