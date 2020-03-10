@@ -22,7 +22,7 @@ Some Github terms you might be confused by:
 <h2>Github Setup</h2>
 Check if GitHub is installed.
 
->git --version
+```git --version```
 
 <p>If not, follow the install wizard here:
 http://bit.ly/dl_github  (https://git-scm.com/downloads)
@@ -42,21 +42,21 @@ Congrats, you just made your first Github repo!</p>
 <h2>Mac/linux Git Install instructions:</h2>
 If you're using a Mac or Linux OS, open up the terminal. On a mac, you should be able to find it by searching for "terminal", or looking in your Applications folder. To see if you have git, type </p>
 
->git --version
+```git --version```
 
 <p>and press enter. If you don't have it yet, follow these instructions, and then restart your terminal to see if it worked.</p>
  
 <h2>Windows Git Install Instructions:</h2>
 If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt should also work, but I like powershell more.) To see if you have git, type: </p> 
 
->git --version 
+```git --version ```
 
 <p>and press enter. If you don't have it yet, follow these instructions, and then restart your powershell to see if it worked.
 For either setup, remember to do these commands too:</p>
 
->git config --global user.name "Your name"  OR 
+```git config --global user.name "Your name" ``` OR 
 
->git config --global user.email "your@email.com"
+```git config --global user.email "your@email.com"```
 
 <h2>Cloning the Repo</h2>
 <p>Now that you have Git installed, we can finally clone our repo! But first, we need to learn how to use our terminal.
@@ -65,10 +65,9 @@ Your terminal always points to somewhere on your computer, and we can type diffe
 
 Here are the terminal commands we'll be using:
 <ul>
-<li>cd [somewhere] -- stands for "change directory". Replace [somewhere] with an existing folder.</li>
-<li>cd .. will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
-<li>cd ~ will take you to your "home directory" from wherever you are.</li>
-<li>ls -- is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
+<li>```cd [somewhere]``` -- stands for "change directory". Replace [somewhere] with an existing folder.</li>
+<li>```cd ../``` will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
+<li>```ls ``` is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
 <li>mkdir [folder name] -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
 </ul>
 
@@ -124,9 +123,9 @@ Note: HTML is used to format text, and tell the browser what each text is for. I
 So, now we have a website! Let's save it to our Github repo, so the whole world can see it!
 Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
 Add your files by typing: </p>
-```
-git add *. 
-```
+
+```git add *. ```
+
 <p>
 The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
 
@@ -137,9 +136,8 @@ Commit your files with: </p>
 <p>
 Note that commiting your code creates a log of what has been added, and gets it ready to put onto Github, but it doesn't actually transfer it yet!
 
-Enter
-```git push ```
-to "push" all your local commits to your github repo.
+Enter```git push ```to "push" all your local commits to your github repo.
+
 If you didn't get any errors, go to Github and see if your code is all there! </p>
 ------------------
 <h1>Now let’s compare to Sourcetree... </h1>
