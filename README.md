@@ -202,7 +202,7 @@ Let’s make our index.html connect with the styling.css file that is now in our
  
  </head>
 ```
-<p>Save your HTML and see if the styles were applied! Make sure that in ```href="style.css"```, ```"style.css" ``` is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
+<p>Save your HTML and see if the styles were applied! Make sure that in href="style.css", "style.css" is the exact same name as your css file. Also make sure your css file is in the same folder as your .html file!
 
 In Sourcetree, go to “File Status” and we should grey box showing the changes made to the files. We should see whatever changes we made to index.html shown in there. If we want to commit those changes, select the file name, hit “stage selected.” It should move into the “staged files” box. This is taking place of the ```git add *``` command we did earlier.
 
