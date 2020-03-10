@@ -125,7 +125,7 @@ So, now we have a website! Let's save it to our Github repo, so the whole world 
 Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
 Add your files by typing: </p>
 
-```git add *. ```
+```git add * ```
 
 <p>
 The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
@@ -154,7 +154,7 @@ If you didn't get any errors, go to Github and see if your code is all there! </
 
 <h2>In Sourcetree</h2>
  
-<p>Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how Sourcetree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier.
+<p>Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how Sourcetree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier. Or you can hit '+' and add existing.
 
 <em>Note to presenter: Use the GitHub interface to create the css file. This will give them practice in pulling in a file.</em>
 
@@ -189,7 +189,7 @@ p {
 }
 
 ```
-<p>It’s a good habit that when you are not working with a brand-new repository to pull for changes. If someone else had pushed to the same repository, we’d need to pull their changes locally. Let’s hit “pull” on Sourcetree. When we open up the editor, we should see the new changes from us pulling.
+<p>It’s a good habit that when you are not working with a brand-new repository to fetch for changes. If someone else had pushed to the same repository, we’d need to pull their changes locally. Let’s hit “fetch” on Sourcetree. We'll see there is a change and then we'll hit "pull." When we open up the editor, we should see the new changes from us pulling.
 
 Let’s make our index.html connect with the styling.css file that is now in our editor.
 
@@ -208,7 +208,7 @@ In Sourcetree, go to “File Status” and we should grey box showing the change
 
 We are ready to write our commit message. Do this in the bottom-most box (underneath your username). This is taking place of the ```git commit -m "message"``` command we did earlier.
 
-The “push” feature at the top should now have a blue oval with the number of files to commit. Select “master” branch under “Branches.” Notice that to the right, it shows the changes by denoting green for additions and red for anything removed/updated. Hit “push.” This is taking place of the ```git push``` command we did earlier.
+The “push” feature at the top should now have a blue oval with the number of files to commit. Select “master” branch under “Branches.” Notice that to the right, it shows the changes by denoting green for additions, yellow for modifications and red for anything removed. Hit “push.” This is taking place of the ```git push``` command we did earlier.
 
 
 Verify that changes were pushed in GitHub. Then try opening ```index.html``` locally to see the new styling! </p>
