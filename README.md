@@ -13,20 +13,24 @@ Github uses Git, a version control system (like SVN, if you've used that) that l
 
  <h2> Github Glossary</h2>
 Some Github terms you might be confused by:
-<strong>Git</strong> -- Version control system. You install this on your computer to let you easily move things to and from Github 
-<strong>Github</strong> -- The website hosting everything submitted by Git.
-<strong>Repository (or repo)</strong> -- Any github project. Basically just a set of files hosted on github.
-<strong>Clone</strong>-- You can take a Github repo and clone it to your local computer so you can work on it.
-<strong>Commit</strong> -- Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
+- <strong>Git</strong> -- Version control system. You install this on your computer to let you easily move things to and from Github 
+- <strong>Github</strong> -- The website hosting everything submitted by Git.
+- <strong>Repository (or repo)</strong> -- Any github project. Basically just a set of files hosted on github.
+- <strong>Clone</strong>-- You can take a Github repo and clone it to your local computer so you can work on it.
+- <strong>Commit</strong> -- Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
 (Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)
 
 <h2>Github Setup</h2>
-Check if GitHub is installed.
+Check if 'git' is installed.
 
 ```git --version```
 
 <p>If not, follow the install wizard here:
-http://bit.ly/dl_github  (https://git-scm.com/downloads)
+https://git-scm.com/downloads
+ 
+It's a suggestion to allow Git to be accessed from command line.
+![](https://i.stack.imgur.com/OLjVh.png)
+ 
 The first thing we need is to set up a github account. *If you already have a github account, skip this portion.*
 Go to github.com and sign up with a unique username, and an email you can access.
 Select the free account option and press continue. 
@@ -48,7 +52,7 @@ If you're using a Mac or Linux OS, open up the terminal. On a mac, you should be
 <p>and press enter. If you don't have it yet, follow these instructions, and then restart your terminal to see if it worked.</p>
  
 <h2>Windows Git Install Instructions:</h2>
-If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt should also work, but I like powershell more.) To see if you have git, type: </p> 
+If you're using a Windows computer, open up Windows Powershell. You should be able to find it by searching for it. (Command Prompt would also work.) To see if you have git, type: </p> 
 
 ```git --version ```
 
