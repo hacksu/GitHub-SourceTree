@@ -47,7 +47,7 @@ If you're using a Windows computer, open up Windows Powershell. You should be ab
 <br>
 If not, follow the install wizard here: https://git-scm.com/downloads
  
-It's a suggestion to allow Git to be accessed from command line.
+It's a suggestion to "use Git and optional Unix tools from the Windows Command Prompt." The rest of the options, the default settings will work.
 ![](https://miro.medium.com/max/1232/1*eo_lqm7iG8TxgZ_FqmPMzg.png)
  
  
@@ -93,8 +93,14 @@ You just cloned your repo to your computer! You can now enter ```cd [repo name]`
 </p>
 <h2>Making Our Website</h2>
 <p>
-Open a text editor like VS Code or Atom. If you don't have one, VS Code is a great, light-weight choice.
+Open a text editor like VS Code or Atom. If you need one, here's the install for VS Code: https://code.visualstudio.com/
  
+<h3> Create a new branch </h3>
+Let's create and checkout a new branch. 
+```git checkout -b [branch name]```
+See if it created your new branch by doing
+```git branch```
+We'll make the changes just on this branch.
  
 In your local clone of your repo, make a new file and name it with the extension .html, like "index.html" or "website.html". In this file, we'll be writing HTML, our first language! Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
 </p>
@@ -123,7 +129,9 @@ In your local clone of your repo, make a new file and name it with the extension
   </body>
  </html>
 ```
-Once you've made these changes and saved, go to the file location in your directory and double click it. It should open up in your browser and you can see the HTML code!
+Save these changes. If we do, ```git status```, we'll see the file was changed.
+
+Go to the file location in your file explorer/finder and double click it. It should open up in your browser and you can see the HTML code!
 
 <br>
 <p>
@@ -150,6 +158,17 @@ Note that commiting your code creates a log of what has been added, and gets it 
 Enter```git push ```to "push" all your local commits to your github repo.
 
 If you didn't get any errors, go to Github and see if your code is all there! </p>
+
+<h3> Pull Request </h3> 
+A pull request is a way to get the code we committed in the newly created branch to the master branch of the repo. 
+In GitHub:
+<ol>
+<li>Check for a notice on the "Code" page that you can pull changes. If it's not there, go to the "pull requests" tab. </li>
+<li> New pull request </li>
+<li> Compare the new branch to the base. ie base:master <- compare:[mybranchname]</li>
+<li> If you're certain of the changes, select "merge pull request."
+</ol>
+
 ------------------
 <h2> Source Control GUIs</h2>
 <p>If working within the command line is not your preference, there are some great GUIs out there. Check out an extensive list per OS here: [https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
