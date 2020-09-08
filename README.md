@@ -71,12 +71,10 @@ Congrats, you just made your first Github repo!</p>
 Your terminal always points to somewhere on your computer, and we can type different commands to navigate through our computer and interact with files. (Tip: Pressing 'tab' in the terminal will try to autocomplete whatever you're typing.)
 
 Here are the terminal commands we'll be using:
-<ul>
-<li>**cd [somewhere]**-- stands for "change directory". Replace [somewhere] with an existing folder.</li>
-<li>**cd ../** will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
-<li>**ls**  is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
-<li>**mkdir [folder name]** -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
-</ul>
+```cd [somewhere]``` stands for "change directory". Replace [somewhere] with an existing folder. <br>
+```cd ../``` will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/) <br>
+```ls```  is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory. <br>
+```mkdir [folder name]``` stands for "make directory". Will make a folder named [folder name] in the current directory. <br>
 
 Type ```cd Desktop``` you'll navigate straight to your desktop. From there, navigate to wherever you want to keep your project on your folder. You can also type: 
 ```mkdir hacksuProjects ```
@@ -93,7 +91,7 @@ You just cloned your repo to your computer! You can now enter ```cd [repo name]`
 </p>
 <h2>Making Our Website</h2>
 <p>
-Open a text editor like VS Code or Atom. If you need one, here's the install for VS Code: https://code.visualstudio.com/
+Open a text editor like VS Code, Atom or even notepad. 
  
 <h3> Create a new branch </h3>
 Let's create and checkout a new branch. 
@@ -143,7 +141,7 @@ So, now we have a website! Let's save it to our Github repo, so the whole world 
 Go back to your terminal and navigate to your repo folder. There's three steps to saving to Github:
 Add your files by typing: </p>
 
-```git add * ```
+```git add [filename] ```
 
 <p>
 The astrisk is used to mean "everything in this folder." Alternatively, we could type git add index.html to only submit a single files.
@@ -159,7 +157,7 @@ Enter```git push ```to "push" all your local commits to your github repo.
 
 If you didn't get any errors, go to Github and see if your code is all there! </p>
 
-<h3> Pull Request </h3> 
+<!--<h3> Pull Request </h3> 
 A pull request is a way to get the code we committed in the newly created branch to the master branch of the repo. 
 In GitHub:
 <ol>
@@ -168,14 +166,15 @@ In GitHub:
 <li> Compare the new branch to the base. ie base:master <- compare:[mybranchname]</li>
 <li> If you're certain of the changes, select "merge pull request."
 </ol>
-
+-->
 ------------------
-<h2> Source Control GUIs</h2>
-<p>If working within the command line is not your preference, there are some great GUIs out there. Check out an extensive list per OS here: [https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
+<h1> Source Control GUIs</h1>
+<p>If working within the command line is not your preference, there are some great GUIs out there. Check out an extensive list per OS here: https://git-scm.com/downloads/guis
 
-<h1>SourceTree Demo </h1>
-<p>SourceTree is one of the options in that list and it comes from the Atlassian family (owners of Trello, Jira, BitBucker and more).</p>
-<h2>Downloading Sourcetree:</h2>
+<h2>SourceTree Demo </h2>
+SourceTree is one of the options in that list and it comes from the Atlassian family (owners of Trello, Jira, BitBucker and more).
+<br>
+Downloading SourceTree:
 <ol>
 <li>Download at https://www.sourcetreeapp.com/ or just follow along with the lesson</li>
 <li>Select Bit Bucket option (not Bit Bucket server)</li>
@@ -183,15 +182,10 @@ In GitHub:
 <li>If asked if you need a SSH key, say “no.”</li>
 </ol>
 
-<p>Let’s pull our current repository into Sourcetree.</p>
-
 <h2>In Sourcetree</h2>
- 
-<p>Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how SourceTree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier. Or you can hit '+' and add existing.
+Go to “+” at the top. Since we're working in the same repo, we can just add. Browse the the repo's file location.
+We're going to add a new file named "style.css". Copy and paste the below code.
 
-<em>Note to presenter: Use the GitHub interface to create the css file. This will give them practice in pulling in a file.</em>
-
-create style.css</p>
 ```
 body {
   background: cyan;
@@ -222,7 +216,7 @@ p {
 }
 
 ```
-<p>It’s a good habit that when you are not working with a brand-new repository to fetch for changes. If someone else had pushed to the same repository, we’d need to pull their changes locally. Let’s hit “fetch” on Sourcetree. We'll see there is a change and then we'll hit "pull." When we open up the editor, we should see the new changes from us pulling.
+<!--<p>It’s a good habit that when you are not working with a brand-new repository to fetch for changes. If someone else had pushed to the same repository, we’d need to pull their changes locally. Let’s hit “fetch” on Sourcetree. We'll see there is a change and then we'll hit "pull." When we open up the editor, we should see the new changes from us pulling.-->
 
 Let’s make our index.html connect with the styling.css file that is now in our editor.
 
