@@ -1,5 +1,5 @@
-<h2> Tutorial on using GitHub and Sourcetree(source control GUI)</h2>
-<h1>Github - What Is It, and Why Use It?</h1>
+<h1> Tutorial on using GitHub and Sourcetree(source control GUI)</h2>
+<h2>Github - What Is It, and Why Use It?</h2>
 
 If you already know what github is, skip this section.
 
