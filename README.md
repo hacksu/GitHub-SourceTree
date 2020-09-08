@@ -43,7 +43,7 @@ If you're using a Windows computer, open up Windows Powershell. You should be ab
 
 <p>and press enter. 
 <br>
-If not, follow the install wizard here: [https://git-scm.com/downloads](https://git-scm.com/downloads])
+If not, follow the install wizard here: https://git-scm.com/downloads
  
 It's a suggestion to allow Git to be accessed from command line.
 ![](https://miro.medium.com/max/1232/1*eo_lqm7iG8TxgZ_FqmPMzg.png)
@@ -58,7 +58,7 @@ For either setup, remember to do these commands too:</p>
 
 
 <h2>Repo Setup through GitHub</h2>
-<p>Once you have a confirmed Github account, click on the + icon in the upper lefthand corner of Github, and select "New Repository".
+<p>Once you have a confirmed Github account, click on the + icon in the upper lefthand corner of GitHub, and select "New Repository".
 Name your repository whatever you want -- "My first site" or something. Add a description, decide whether you want it to be public or not, and check the box that says "initialize this repository with a README".
 Congrats, you just made your first Github repo!</p>
 
@@ -70,10 +70,10 @@ Your terminal always points to somewhere on your computer, and we can type diffe
 
 Here are the terminal commands we'll be using:
 <ul>
-<li>cd [somewhere]-- stands for "change directory". Replace [somewhere] with an existing folder.</li>
-<li>cd ../ will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
-<li>ls  is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
-<li>mkdir [folder name] -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
+<li>**cd [somewhere]**-- stands for "change directory". Replace [somewhere] with an existing folder.</li>
+<li>**cd ../** will take you back one folder (ex: if you're in ~/Files/myfolder/, cd .. takes you to ~/Files/)</li>
+<li>**ls**  is an abbreviation for "list", which doesn't make sense but whatever. It lists all the files and folders in your current directory</li>
+<li>**mkdir [folder name]** -- stands for "make directory". Will make a folder named [folder name] in the current directory.</li>
 </ul>
 
 Type ```cd Desktop``` you'll navigate straight to your desktop. From there, navigate to wherever you want to keep your project on your folder. You can also type: 
@@ -85,14 +85,16 @@ Go to your repo page on Github and find the green button that says 'Clone or dow
 ```
 git clone [url]
 ```
-<p>You just cloned your repo to your computer! You can now enter cd [repo name] to go into your repo.
+You just cloned your repo to your computer! You can now enter ```cd [repo name]``` to go into your repo.
 
 ------------------
 </p>
 <h2>Making Our Website</h2>
 <p>
-Open a text editor like VS Code or Atom.
-In your local clone of your repo, make a new file and name it with the extension .html, like index.html or website.html. In this file, we'll be writing HTML, our first language! Go Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
+Open a text editor like VS Code or Atom. If you don't have one, VS Code is a great, light-weight choice.
+ 
+ 
+In your local clone of your repo, make a new file and name it with the extension .html, like "index.html" or "website.html". In this file, we'll be writing HTML, our first language! Then, go to the file and double click it. It should open up in your browser, just like a normal website would!
 </p>
 
  ```
@@ -104,13 +106,13 @@ In your local clone of your repo, make a new file and name it with the extension
   </head>
   <body>
  
-   <h1>My first website (or whatever)</h2>
+   <h1>Best website ever</h2>
   
    <p>Here's some text in a 'paragraph' tag</p>
    <p>Here's some more text, with a <a href="https://youtu.be/zbc2LUAP6G4">link!</a>
    <img src="https://i.kym-cdn.com/entries/icons/mobile/000/025/999/Screen_Shot_2018-04-24_at_1.33.44_PM.jpg" height="200px" width="400px">
  
-  <div class="myDiv"> This is a special divider</div>
+  <div class="myDiv"> This is a special divider.</div>
   
    <button onclick="alert('hello world')">Here's a button </button> 
   
@@ -119,7 +121,9 @@ In your local clone of your repo, make a new file and name it with the extension
   </body>
  </html>
 ```
+Once you've made these changes and saved, go to the file location in your directory and double click it. It should open up in your browser and you can see the HTML code!
 
+<br>
 <p>
 Note: HTML is used to format text, and tell the browser what each text is for. It works by surrounding text opening tags, like <body>, and closing tags, like </body>. The head tags surround information about the website, while the body tags show the actual content of the website. If any of these tags confuse you, turn to google to learn about them!
 </p>
@@ -145,20 +149,24 @@ Enter```git push ```to "push" all your local commits to your github repo.
 
 If you didn't get any errors, go to Github and see if your code is all there! </p>
 ------------------
-<h1>Now let’s compare to Sourcetree... </h1>
+<h2> Source Control GUIs</h2>
+<p>If working within the command line is not your preference, there are some great GUIs out there. Check out an extensive list per OS here: [https://git-scm.com/downloads/guis](https://git-scm.com/downloads/guis)
+
+<h1>SourceTree Demo </h1>
+<p>SourceTree is one of the options in that list and it comes from the Atlassian family (owners of Trello, Jira, BitBucker and more).</p>
 <h2>Downloading Sourcetree:</h2>
-<ul>
-<li>Download at https://www.sourcetreeapp.com/</li>
+<ol>
+<li>Download at https://www.sourcetreeapp.com/ or just follow along with the lesson</li>
 <li>Select Bit Bucket option (not Bit Bucket server)</li>
 <li>There should be a pop-up prepopulated with GitHub credentials. If that’s not there, enter your GitHub credentials.</li>
 <li>If asked if you need a SSH key, say “no.”</li>
-</ul>
+</ol>
 
 <p>Let’s pull our current repository into Sourcetree.</p>
 
 <h2>In Sourcetree</h2>
  
-<p>Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how Sourcetree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier. Or you can hit '+' and add existing.
+<p>Go to “Clone” at the top. Copy and paste the URL that we cloned earlier. This is how SourceTree know which repo to work with. Verify that the prepopulated filepath is the same as what we used earlier. Or you can hit '+' and add existing.
 
 <em>Note to presenter: Use the GitHub interface to create the css file. This will give them practice in pulling in a file.</em>
 
@@ -201,7 +209,7 @@ Let’s make our index.html connect with the styling.css file that is now in our
 ```
 <head>
  
- <title>My first website, yo !</title>
+ <title>Best website ever</title>
  <link rel="stylesheet" href="style.css">
  
  </head>
