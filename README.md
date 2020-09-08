@@ -13,11 +13,13 @@ Github uses Git, a version control system (like SVN, if you've used that) that l
 
  <h2> Github Glossary</h2>
 Some Github terms you might be confused by:
-- <b>Git</b> Version control system. You install this on your computer to let you easily move things to and from Github 
-- <b>Github</b> The website hosting everything submitted by Git.
-- <b>Repository (or repo)</b> Any github project. Basically just a set of files hosted on github.
-- <b>Clone</b> You can take a Github repo and clone it to your local computer so you can work on it.
-- <b>Commit</b> Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.
+<ul>
+<li><b>Git</b> Version control system. You install this on your computer to let you easily move things to and from Github </li>
+<li><b>Github</b> The website hosting everything submitted by Git.</li>
+<li><b>Repository (or repo)</b> Any github project. Basically just a set of files hosted on GitHub.</li>
+<li><b>Clone</b> You can take a Github repo and clone it to your local computer so you can work on it.</li>
+<li><b>Commit</b> Once you have a local clone of a repo, you can submit a commit of your changes back to the parent repo. Each commit is basically a 'version', when we talk about version control.</li>
+ </ul>
 (Note that git commit won't submit your code to Github on its own. The full process for committing code is git add [whatever files were changed], git commit -m "your commit message", git push. We'll go over this later.)
 
 <h2>Github Setup</h2>
